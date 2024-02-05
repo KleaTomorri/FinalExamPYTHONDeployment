@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Show</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>Recommend a New Show</h1>
+
+    <h3>Please provide details</h3>
+    <div class="container">
+        <h2 class="text-center"></h2>
+        <form action="/shows/new" method="POST">
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input class="form-control" type="text" name="title" id="title" required minlength="3">
+            </div>
+            <div class="form-group">
+                <label for="network">Network:</label>
+                <input class="form-control" type="text" name="network" id="network" required minlength="3">
+            </div>
+            <div class="form-group">
+                <label for="release_date">Release Date:</label>
+                <input class="form-control" type="date" name="release_date" id="release_date" required>
+            </div>
+            <div class="form-group">
+                <label for="comments">Comments:</label>
+                <input class="form-control" type="text" name="comments" id="comments" required minlength="3">
+            </div>
+
+
+            <button type=" submit " class="btn btn-primary ">Add</button>
+        </form>
+    </div>
+
+    <div class="container mt-4 ">
+        <div class="d-flex justify-content-between ">
+            <a href="/shows " class="text-decoration-none ">TV Shows</a>
+            <a href="/logout " class="text-decoration-none ">Logout</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
